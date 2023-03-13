@@ -1,0 +1,1544 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+    
+* {
+  font-family: 'Raleway', sans-serif;
+  
+  /* border: 1px solid black !important; */
+}
+
+        
+  /* HEADER DE LA PAGE */
+      nav {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        max-width: 1330px;
+        margin: auto;
+      }
+      
+      nav img {
+        width: 8rem;
+        margin-right: auto;
+      }
+      
+      nav ul {
+        display: flex;
+        margin: 0;
+      }
+      nav ul li {
+        list-style-type: none !important;
+        width: 100%;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.2rem;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+      }
+      
+      
+      a.active {
+        border-top: 2px solid #0065fc !important;
+        border-bottom: 2px solid transparent;
+        color: #0065fc;
+      }
+      
+      nav ul a:hover {
+        border-top: 2px solid #0065fc;
+        color: #0065fc;
+      }
+
+/* BODY DE LA PAGE PARTIE RECHERCHE ET FILTRES */
+
+  /* PARTIE RECHERCHE */
+
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      main {
+        max-width: 1340px;
+        margin: auto;
+        padding: 0 5%;
+      }
+
+      main .infoForm {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+
+      main .infoForm h1 {
+        font-size: 130%;
+        font-weight: 700;
+      }
+
+      main .infoForm p {
+        margin-top: -5px;
+      }
+
+      div .form {
+        display: flex;
+        align-items: center;
+      }
+
+      div .form .iconRecherche {
+        display: flex;
+        height: 41px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+
+      }
+
+      div .form .zoneRecherche {
+        display: flex;
+        align-items: center;
+        height: 39px;
+        width: 200px;
+        border: 1px solid #F2F2F2;
+      }
+
+      div .form .zoneRecherche input {
+        font-size: 95%;
+        font-weight: 700;
+        color: black;
+        padding-left: 20px;
+        border: none;
+      }
+
+      div .form .bouttonRecherche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065FC;
+        color: white;
+        height: 41px;
+        width: 110px ;
+        font-size: 95%;
+        border-radius: 0px 15px 15px 0px;
+        cursor: pointer;
+      }
+
+      .fa-magnifying-glass {
+        display: none !important;
+      }
+
+      /* PARTIE FILTRES */
+
+      section .filtres {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        max-width: 1340px;
+        /* height: 44px; */
+        
+      }
+
+
+      .filtreIcon {
+        height: 44px;
+        width: 44px;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-radius: 50%;
+      }
+
+      .filtresIconTexte {
+        display: flex;
+        align-items: center;
+        margin-left: 35px;
+        border: 2px solid #DEEBFF;
+        border-radius: 30px 30px 30px 30px;
+        cursor: pointer;
+
+      }
+
+      .filtresIconTexte:hover {
+
+        background-color: aliceblue;
+
+      }
+
+      .displayFlexCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section .filtres .texteFiltres {
+        font-weight: 700;
+      }
+
+      section .filtres .filtreEconomique .texteFiltreEconomique {
+        height: 44px;
+        width: 100px;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-weight: 700;
+      }
+
+      section .filtres .filtreFamilial .texteFiltreFamilial {
+        height: 44px;
+        width: 70px;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-weight: 700;
+      }
+
+      section .filtres .filtreRomantique .texteFiltreRomantique {
+        height: 44px;
+        width: 100px;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-weight: 700;
+      }
+
+
+      section .filtres .filtreAnimaux .texteFiltreAnimaux {
+        height: 44px;
+        width: 150px;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-weight: 700;
+      }
+    /* Partie Info */
+
+      .infoRecherche {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        max-width: 1340px;
+        
+      }
+
+      .iconInfo {
+        border: 1px solid #F2F2F2;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        color: #0065fc;
+      }
+
+      .texteInfo {
+        font-weight: 400;
+        margin-left: 13px;
+      }
+
+    /* Partie Resultat Hébergement */
+
+      a {
+        text-decoration:  none;
+        color: black;
+      }
+
+      .resultatRecherche {
+        display: flex;
+        max-width: 1340px;
+
+      }
+
+      .fondHebergement {
+        width: auto;
+        height: auto;
+        max-width: 810px;
+        /* max-height: 600px; */
+        padding: 20px 25px 32px 30px;
+        background-color: #F2F2F2;
+        margin-right: 30px;
+        margin-top: 35px;
+        border-radius: 20px;
+      }
+
+      .texteRecherche {
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-left: 14px;
+      }
+
+
+      .serieVignetteHebergement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .displayFlex{
+        display: flex;
+      }
+
+      .displayFlexColumn{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .vignette {
+        border: 4px solid rgba(253, 253, 253, 0.3);
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        margin: 0 10px;
+      }
+
+      .vignetteMarginTop {
+        margin-top: 30px;
+      }
+
+      .imageStyleHebergement {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 235px;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+      }
+
+      .imageVignette1 {
+        background-image: url(images/AubergeLaCannebiere.jpg);
+        background-position-y: -25px;
+      }
+
+      .imageVignette2 {
+        background-image: url(images/HotelDuPort.jpg);
+        background-position-y: -25px ;
+      }
+
+      .imageVignette3 {
+        background-image: url(images/HotelLesMouettes.jpg);
+        background-position-y: -25px;
+      }
+
+      .imageVignette4 {
+        background-image: url(images/hotelDeLaMer.jpg);
+        background-position-y: -50px;
+      }
+
+      .imageVignette5 {
+        background-image: url(images/AubergeLePanier.jpg);
+      }
+
+      .imageVignette6 {
+        background-image: url(images/HotelChezAmina.jpg);
+        background-position-y: -120px;
+      }
+
+      .texteVignette {
+        font-size: 14px;
+        padding-left: 5%;
+        margin-top: -3%;
+      }
+
+      .prixVignette {
+        display: flex;
+        padding-left: 5%;
+        margin-top: -4%;
+      }
+
+      .noteVignette {
+        padding-left: 5%;
+        margin-top: 3%;
+        padding-bottom: 2%;
+      }
+
+      .bonneEtoiles {
+        color: #0065FC;
+      }
+
+      .mauvaiseEtoiles {
+        color: lightgray;
+      }
+
+      .texteAfficher {
+        font-size: larger;
+        font-weight: bold;
+        width: 120px;
+        margin-top: 6%;
+        padding-bottom: 1%;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+
+      /* Partie Les plus populaires */
+
+      .fondPopulaire {
+        width: 355px;
+        padding: 32px 25px 0px 38px;
+        background-color: #F2F2F2;
+        margin-top: 35px;
+        border-radius: 20px;
+      }
+
+      .texteRecherchePopulaire {
+        font-size: 14px;
+        margin-top: -7px;
+        margin-bottom: 20px;
+      }
+
+      .serieVignettePopulaire {
+        display: flex;
+        flex-wrap: wrap;
+       
+      }
+
+      .texteIcon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .marginLeft5Pourcent {
+        margin-left: 5%;
+      }
+
+      .marginTop20Pourcent {
+        margin-top: 20%;
+      }
+
+      .iconPopulaire {
+        font-size: 20px;
+        margin-top: -25px;
+      }
+
+      .vignettePopulaire {
+        border: 4px solid rgba(253, 253, 253, 0.3);
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        width: 350px;
+        height: 140px;
+        margin-right: 10px;
+        margin-left: -3px;
+        margin-top: -13px;
+        margin-bottom: 50px;
+      }
+
+      .imageStylePopulaire {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 125px;
+        border-radius: 20px 0px 0px 20px;
+        height: 139px;
+      }
+
+      .imageVignettePopulaire1 {
+        background-image: url(images/HotelLeSoleil.jpg);
+        background-position-x: -40px;
+      }
+
+      .imageVignettePopulaire2 {
+        background-image: url(images/AuCoeurDeLeau.jpg);
+        background-position-x: -33px;
+      }
+
+      .imageVignettePopulaire3 {
+        background-image: url(images/HotelToutBleu.jpg);
+        background-position-y: -17px ;
+      }
+
+
+      /* Partie Activites */
+
+      .fondActivites {
+        max-width: 1340px;
+        max-height: 600px;
+        /* background-color: antiquewhite; */
+        margin-top: 45px;
+        margin: auto;
+        padding-top: 3%;
+      }
+
+      .texteActivites {
+        font-size: 14px;
+        
+      }
+
+      .parentToutesVignettes {
+        width: 1340px;
+        
+      }
+
+      .parentVignette1 {
+        width: 645px;
+        /* width: auto; */
+        /* height: auto; */
+        /* background-color: #DEEBFF; */
+      }
+
+      .parentVignetteDeuxEtTrois {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .parentTroisVignetteDroite {
+        margin-left: 25px;
+        max-width: 645px;
+        /* width: auto; */
+        /* height: auto; */
+      }
+
+      .vignetteActivitesVieuxPort {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        width: 300px;
+        height: 410px;
+        margin-right: 10px;
+        /* margin-left: -3px; */
+        margin-bottom: 50px;
+      }
+
+      .vignetteActivitesFort {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        width: 300px;
+        height: 213px;
+        margin-right: 10px;
+        margin-left: 25px;
+        margin-bottom: 50px;
+      }
+
+      .vignetteActivitesIles {
+        
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        width: 300px;
+        margin-left: 25px;
+        margin-top: -8px;
+      }
+
+      .vignetteActivitesNotreDame {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        width: 300px;
+        height: 190px;
+        margin-left: 25px;
+        /* margin-top: -8px; */
+      }
+
+      .vignetteActivitesParcLongchamp {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 3px 16px -1px rgba(0,0,0,0.30);
+        cursor: pointer;
+        width: 300px;
+        height: 183px;
+        margin-top: 37px;
+        margin-right: 10px;
+        margin-left: 25px;
+        margin-bottom: 50px;
+      }
+
+      .texteVignetteVieuxPort {
+        
+        font-weight: bold;
+        background-color: white;
+       
+      }
+
+      .texteVignetteVieuxPort h4 {
+        
+        padding: 17px 0px 0px 20px;
+        margin-block-start: 0;
+       
+      }
+
+      .texteVignetteFort {
+        
+        font-weight: bold;
+        background-color: white;
+      }
+
+      .texteVignetteFort h4{
+        padding: 17px 0px 0px 20px;
+        margin-block-start: 0;
+      }
+
+      .texteVignetteIles {
+        
+        font-weight: bold;
+        
+      }
+
+      .texteVignetteIles h4 {
+        padding: 17px 0px 18px 20px;
+        margin-block-start: 0;
+        margin-block-end: 0;        
+      }
+
+      .texteVignetteParcCalanques {
+        font-weight: bold;
+        background-color: white;
+        
+      }
+
+      .texteVignetteParcCalanques h4 {
+        padding: 17px 0px 0px 20px;
+        margin-block-start: 0;
+        
+      }
+
+      .texteVignetteNotreDame {
+        font-weight: bold;
+        background-color: white;
+      }
+
+      .texteVignetteNotreDame h4 {
+        padding: 17px 0px 0px 20px;
+
+        margin-block-start: 0;
+      }
+
+      .texteVignetteParcLongchamp {
+        height: 32px;
+        border-radius: 0px 0px 20px 20px;
+        font-weight: bold;
+        background-color: white;
+      }
+
+      .texteVignetteParcLongchamp h4 {
+        padding: 15px 0px 0px 20px;
+        
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      .imageStyleActivitesUN {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        border-radius: 20px 20px 0px 0px;
+        height: 360px;
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      .imageStyleFort {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        border-radius: 20px 20px 0px 0px;
+        height: 163px;
+        max-height: 100%;
+        max-width: 100%;
+      }
+      
+      .imageStyleIles {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px 20px 0px 0px;
+        width: 300px;
+        height: 100px;
+      }
+
+      .imageStyleNotreDame {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        border-radius: 20px 20px 0px 0px;
+        height: 137px;
+        max-height: 100%;
+        max-width: 100%;
+      }
+       
+      .imageStyleParcLongchamp {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        border-radius: 20px 20px 0px 0px;
+        height: 137px;
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      .photoVieuxPort {
+       background-image: url(images/VieuxPort.jpg);
+       background-position-x: -130px;
+       background-position-y: -3px;
+      }
+
+      .photoFort {
+        background-image: url(images/FortDePomegues.jpg);
+        background-position-y: -120px;
+      }
+
+      .photoIles {
+        background-image: url(images/IlesDuFrioul.jpg);
+        background-position-y: -24px;
+      }
+
+      .photoParcCalanques {
+        background-image: url(images/ParcNationalDesCalanques.jpg);
+        background-position-x: -140px;
+        background-position-y: 0px;
+      }
+
+      .photoNotreDame {
+        background-image: url(images/NotreDame.jpg);
+      }
+
+      .photoParcLongchamp {
+        background-image: url(images/ParcLongchamp.jpg);
+        background-position-y: -20px;
+      }
+
+    /* Partie FOOTER */
+
+      footer {
+        
+        background-color: #F2F2F2;
+        width: 100%;
+      }
+
+
+      footer ul {
+        padding: 0;
+      }
+
+      footer ul li {
+        list-style-type: none !important;
+        margin-bottom: 7%;
+        cursor: pointer;
+        
+      }
+
+      .fondFooter {
+        max-width: 1330px;
+        display: flex;
+        margin: auto;
+        padding: 0.5%;
+        
+      }
+
+      .aPropos {
+        padding-right: 26%;
+        
+      }
+
+      .nosHebergement {
+        padding-right: 22%;
+      }
+      
+      
+      @media screen and (max-width:1476px) {
+        nav{
+          max-width: 100%;
+          display:flex ;
+          flex-wrap: wrap;
+        }
+
+        main {
+          padding: 0 5%;
+        }    
+
+        .resultatRecherche {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .serieVignetteHebergement {
+          margin-top: -3%;
+        }
+
+        .fondHebergement {
+          width: 80%;
+          max-width: 100%;
+          margin-right: 0;
+        }
+
+        .marginTopVignette123 {
+          margin-top: 30px;
+        }
+
+        .vignettePopulaire {
+          margin-left: 6%;
+          /* margin-right: 10%; */
+        }
+
+        .fondPopulaire {
+          width: 80%;
+        }
+
+        .fondActivites {
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+          max-height: 100%;
+        }
+
+        .parentToutesVignettes {
+          flex-direction: column;
+          max-width: 100%;
+          margin-left: 0;
+         
+          
+        }
+      
+        .parentVignette1 {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          max-width: 100%;
+          margin: 2% auto;
+          height: 100%;
+          max-height: 100%;
+        }
+        .parentTroisVignetteDroite {
+        
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        .parentVignetteDeuxEtTrois {
+          flex-direction: row;
+          
+        }
+
+        .vignetteActivitesVieuxPort {
+          height: 213px;
+        }
+
+        .vignetteActivitesParcLongchamp {
+          margin-top: 0;
+          margin-left: 10px;
+        }
+
+        .vignetteActivitesIles {
+          margin-top: 0;
+          height: 213px;
+        }
+
+        .vignetteActivitesNotreDame {
+          height: 213px;
+        }
+
+        .vignetteActivitesParcLongchamp {
+          height: 213px;
+        }
+
+        .photoVieuxPort {
+          background-position-x: 0;
+        }
+
+        .imageStyleActivitesUN {
+          height: 163px;
+        }
+
+        .imageStyleNotreDame {
+          height: 163px;
+        }
+
+        .imageStyleParcLongchamp {
+          height: 163px;
+        }
+
+        .photoParcCalanques {
+          background-position-x: 0;
+        }
+
+        .imageStyleIles {
+          height: 163px;
+        }
+
+        .fondFooter {
+          padding: 0 5%;
+        }
+        
+      
+        .serieVignettePopulaire {
+          justify-content: space-around;
+         
+
+        }
+        .parentToutesVignettes {
+          flex-direction: column;
+          justify-content: space-around;
+          width: 100%;
+          margin-left: -0%;
+        }
+
+        .fondActivites {
+          width: 100%;
+          max-width: 100%;
+          margin: auto;
+          height: 100%;
+          max-height: 100%;
+        }
+
+        .fondPopulaire {
+          /* padding: 0 % 0 5%; */
+        
+          width: 80%;
+        }
+
+        .vignettePopulaire {
+          margin-left: 0;
+
+        }
+
+
+        .parentVignette1 {
+          max-width: 100%;
+          margin: auto;
+        }
+        .parentTroisVignetteDroite {
+          margin-left: 0;
+          display: flex;
+          max-width: 100%;
+          /* margin: auto; */
+        }
+
+        .vignetteActivitesFort {
+          margin-left: 0;
+        }
+
+        .vignetteActivitesIles {
+          margin-left: 0;
+        }
+
+        .vignetteActivitesNotreDame {
+          margin-left: 0;
+        }
+
+        /* .vignetteActivitesParcLongchamp {
+          margin-left: 0;
+        } */
+
+      /* .parentVignetteDeuxEtTrois {
+        flex-direction: row;
+      } */
+
+    }
+
+
+      @media screen and (max-width:1017px) {
+
+        .filtres {
+          margin-bottom: 11%;
+          height: 80px;
+
+        }
+
+        .parentFiltresIcon {
+          max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content:space-around ;
+
+        }
+        
+        .marginTop3pourcent {
+          margin-top: 3%;
+        }
+
+        
+      }
+
+
+      @media screen and (max-width:994px) {
+
+        .fondActivites {
+          width: 100%;
+        }
+
+        .parentToutesVignettes {
+          width: 100%;
+          margin-top: 10%;
+        }
+
+        .parentVignetteDeuxEtTrois {
+          max-width: 100%;
+          flex-direction: column;
+        }
+
+        .parentVignette1 {
+          max-width: 60%;
+          margin: 0 20%;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .vignetteActivitesVieuxPort {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 9%;
+          margin-left: 0;
+         
+        }
+
+        .vignetteActivitesFort {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 10%;
+          margin-left: 0;
+        }
+
+        .vignetteActivitesIles {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 10%;
+          margin-left: 0;
+
+        }
+
+        .vignetteActivitesNotreDame {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 0%;
+          margin-left: 0;
+        }
+
+        .vignetteActivitesParcLongchamp {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 10%;
+          margin-top: 40px;
+          margin-left: 0;
+        }
+
+        .imageStyleActivitesUN {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+          
+        }
+
+        .imageStyleFort {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -160px;
+
+        }
+
+        .imageStyleIles {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+
+        }
+
+        .imageStyleNotreDame {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+        }
+
+        .imageStyleParcLongchamp {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+        }
+
+        .texteVignetteVieuxPort {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteFort {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+     
+        .texteVignetteIles {
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteParcCalanques {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteNotreDame {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteParcLongchamp {
+          border-radius: 0 0 20px 20px;
+          padding: 2% 0 6% 0;
+        }
+
+      }
+
+      @media screen and (max-width:768px) {
+        
+        header {
+          max-width: 100%;
+        }
+
+        main {
+          padding: 0 5%;
+        }
+
+        nav ul li a {
+          
+          border-bottom: 2px solid #F2F2F2 !important;
+        }
+
+        a.active {
+          border-top-style: none !important;
+          border-bottom: 2px solid #0065fc !important;
+          color: #0065fc;
+        }
+        
+        nav ul a:hover {
+          border-top-style: none !important;
+          border-bottom: 2px solid #0065FC !important;
+          color: #0065fc;
+        }
+
+        main .infoForm {
+          margin-top: 0;
+        }
+
+        main .infoForm h1 {
+          margin-top: 25px;
+          padding-right: 12%;
+        }
+
+        main .infoForm p {
+          font-size: 14px;
+          font-weight: 500;
+          padding-bottom: 5%;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+          
+        }
+
+        nav img {
+
+          width: 90px;
+          max-width: 100%;
+          margin: 5% 0 5% 0;
+
+        }
+
+
+        .divListe {
+          width: 100%;
+        }
+
+        nav ul  {
+          padding-left: 0;
+          width: 100%;
+        }
+
+        nav ul li {
+          width: 50%;
+        }
+        
+        nav ul li a {
+          
+          font-size: 17px;
+          width: 100%;
+          justify-content: center;
+          padding: 0;
+        }
+
+        .bouttonRecherche p {
+          display: none;
+        }
+
+        .formboutton {
+          width: 282px;
+          
+        }
+
+        .form {
+          border-radius: 15px;
+          border: 1px solid #F2F2F2
+        }
+
+        div .form .zoneRecherche {
+          border: none;
+        }
+
+        div .form .bouttonRecherche {
+          
+          border-radius: 15px;
+          width: 40px ;
+        }
+
+        .fa-magnifying-glass {
+          display: initial !important;
+        }
+
+        .listeActivites {
+          width: 50%;
+        }
+
+        .filtresTexteIcon {
+          
+          width: 100%;
+        }
+
+        .filtres {
+        
+          display: none;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          height: 180px;
+          width: 350px;
+          margin-bottom: 5%;
+                    
+        }
+
+        section .filtres .filtreEconomique .texteFiltreEconomique {
+          width: 95px;
+        }
+
+        .filtreEconomique {
+          margin-right: 3%;
+        }
+
+        .filtresIconTexte{
+          margin-left: 0;
+        }
+
+        .parentFiltresIcon {
+          
+          width: 100%;
+          justify-content: flex-start;
+          margin-left:0%;
+          margin-top: -2%;
+        }
+        
+        
+        .texteFiltres {
+          margin-left: -0px;
+        }         
+
+   
+
+        section .filtres .filtreFamilial .texteFiltreFamilial {
+          padding-right: 13px;
+        }
+
+   
+
+
+        .infoRecherche {
+          padding-top: 15%;
+        }
+
+        .serieVignetteHebergement {
+          padding: 0 0;
+          max-width: 100%;
+        }
+
+        .vignette {
+          max-width: 100%;
+        }
+        
+        .fondHebergement {
+          width: 100%;
+          padding: 5% 5%;
+          order: 2;
+          background-color: white;
+          margin-bottom: 8%;
+          margin-top: 0;
+
+
+        }
+
+        .imageStyleHebergement {
+          width: 443px;
+          max-width: 100%;;
+        }
+      
+
+        .imageVignette1 {
+          background-position-y: -50px;
+        }
+
+        .imageVignette2 {
+          background-position-y: -50px;
+        }
+
+        .imageVignette3 {
+          background-position-y: -40px;
+        }
+
+        .imageVignette4 {
+          background-position-y: -90px;
+        }
+
+        .imageVignette5 {
+          background-position-y: -30px;
+        }
+
+        .imageVignette6 {
+          background-position-y: -180px;
+        }
+
+        .texteAfficher {
+          margin-left: 0;
+        }
+
+        .marginTopVignette123 {
+          margin-top: 5%;
+        }
+
+        .vignetteMarginTop {
+          margin-top: 5%;
+        }
+
+        .fondPopulaire {
+          width: 100%;
+          padding: 5% 5%;
+          border-radius: 0;
+        }
+
+        .vignettePopulaire {
+          margin-bottom: 8%
+        }
+
+        .fondActivites {
+          width: 100%;
+        }
+
+        .parentToutesVignettes {
+          width: 100%;
+          margin-top: 10%;
+        }
+
+        .parentVignetteDeuxEtTrois {
+          max-width: 100%;
+          flex-direction: column;
+        }
+
+        .parentVignette1 {
+          margin: 0;
+          max-width: 100%;
+        }
+
+        .vignetteActivitesVieuxPort {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 9%;
+         
+        }
+
+        .vignetteActivitesFort {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 10%;
+        }
+
+        .vignetteActivitesIles {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 10%;
+
+        }
+
+        .vignetteActivitesNotreDame {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 0%;
+        }
+
+        .vignetteActivitesParcLongchamp {
+          width: 443px;
+          max-width: 100%;
+          margin-right: 0;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 20px;
+          margin-bottom: 10%;
+        }
+
+        .imageStyleActivitesUN {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+          
+        }
+
+        .imageStyleFort {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -160px;
+
+        }
+
+        .imageStyleIles {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+
+        }
+
+        .imageStyleNotreDame {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+        }
+
+        .imageStyleParcLongchamp {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+          background-size: cover;
+          background-position-x: 0px;
+          background-position-y: -20px;
+        }
+
+        .texteVignetteVieuxPort {
+          border-radius: 0 0 20px 20px;
+          padding: 6% 0 5% 20px;
+        }
+
+        .texteVignetteVieuxPort {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+        
+        
+      
+        .texteVignetteFort {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteIles {
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteParcCalanques {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteNotreDame {
+          border-radius: 0 0 20px 20px;
+          padding: 0;
+          margin-block-end: 0;
+        }
+
+        .texteVignetteParcLongchamp {
+          border-radius: 0 0 20px 20px;
+          padding: 2% 0 6% 0%;
+          
+        }
+     
+        .fondFooter {
+          flex-wrap: wrap;
+          padding: 9% 9%;
+        }
+
+      }
+
+      @media screen and (max-width:575px) {
+
+      
+
+        .filtresIconTexte{
+          margin-left: 0;
+        }
+
+      }
+
+      @media screen and (max-width:510px) {
+     
+
+        .filtresIconTexte{
+          margin-left: 0;
+        }
+
+      
+      }

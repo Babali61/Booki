@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scable=no">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b22139e786.js" crossorigin="anonymous"></script>
+    <title>Booki</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="images/Booki.png" alt="Logo Booki" />
+      <div class="divListe">
+        <ul>
+          <li class="listeHebergement"><a href="#texteRecherche" class="active">Hébergements</a></li>
+          <li class="listeActivites"><a href="#texteActivites">Activités</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="infoForm">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+    </div>
+    <div class="formboutton">
+      <form class="form" action="#">
+        <div class="iconRecherche">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </div>
+        <div class="zoneRecherche">
+          <input type="search" value="Marseille, France">
+        </div>
+        <div class="bouttonRecherche">
+          <p>Rechercher</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </form>
+    </div>
+    <section class="filtresTexteIcon">
+      <div class="filtres">
+        <div class="texteFiltres"><h3>Filtres</h3></div>
+         <div class="parentFiltresIcon displayFlex ">
+           <div class="filtreEconomique filtresIconTexte marginTop3pourcent">
+            <div class="iconEconomique displayFlexCenter filtreIcon">
+              <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+            </div>
+            <div class="texteFiltreEconomique displayFlexCenter">Économique</div>
+          </div>
+          <div class="filtreFamilial filtresIconTexte marginTop3pourcent">
+            <div class="iconFamilial displayFlexCenter filtreIcon">
+              <i class="fa-solid fa-person"></i>
+            </div>
+            <div class="texteFiltreFamilial displayFlexCenter">Familial</div>
+          </div>
+          <div class="filtreRomantique filtresIconTexte marginTop3pourcent">
+            <div class="iconRomantique displayFlexCenter filtreIcon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="texteFiltreRomantique displayFlexCenter">Romantique</div>
+          </div>
+          <div class="filtreAnimaux filtresIconTexte marginTop3pourcent">
+            <div class="iconAnimaux displayFlexCenter filtreIcon">
+              <i class="fa-solid fa-dog"></i>
+            </div>
+            <div class="texteFiltreAnimaux displayFlexCenter">Animaux autorisés</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="infoRecherche ">
+      <div class="iconInfo displayFlexCenter"><i class="fa-solid fa-info"></i></div>
+      <div class="texteInfo">Plus de 500 logements sont disponibles dans cette ville</div>
+    </div>
+    <section class="resultatRecherche">
+      <div class="fondHebergement">
+        <div id="texteRecherche"><h2>Hébergements à Marseille</h2></div>
+        <div class="serieVignetteHebergement">
+          <article class="vignette marginTopVignette123">
+            <a href="#">
+              <div class="imageStyleHebergement imageVignette1"></div>
+              <div class="texteVignette"><h3>Auberge La Cannebière</h3></div>
+              <div class="prixVignette">Nuit à partir de &nbsp;<b>25€</b></div>
+              <div class="noteVignette displayFlex">
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </a>
+          </article>
+          <article class="vignette marginTopVignette123">
+            <a href="#">
+              <div class="imageStyleHebergement imageVignette2"></div>
+              <div class="texteVignette"><h3>Hôtel du port</h3></div>
+              <div class="prixVignette">Nuit à partir de 52<b>€</b></div>
+              <div class="noteVignette displayFlex">
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </a>
+          </article>
+          <article class="vignette marginTopVignette123">
+            <a href="#">
+              <div class="imageStyleHebergement imageVignette3"></div>
+              <div class="texteVignette"><h3>Hôtel Les mouettes</h3></div>
+              <div class="prixVignette">Nuit à partir de 76<b>€</b></div>
+              <div class="noteVignette displayFlex">
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </a>
+          </article>
+          <article class="vignette vignetteMarginTop">
+            <a href="#">
+              <div class="imageStyleHebergement imageVignette4 "></div>
+              <div class="texteVignette"><h3>Hôtel de la mer</h3></div>
+              <div class="prixVignette">Nuit à partir de 46 <b>€</b></div>
+              <div class="noteVignette displayFlex">
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </a>
+          </article>
+          <article class="vignette vignetteMarginTop">
+            <a href="#">
+              <div class="imageStyleHebergement imageVignette5"></div>
+              <div class="texteVignette"><h3>Auberge Le Panier</h3></div>
+              <div class="prixVignette">Nuit à partir de &nbsp;<b>23€</b></div>
+              <div class="noteVignette displayFlex">
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </a>
+          </article>
+          <article class="vignette vignetteMarginTop">
+            <a href="">
+              <div class="imageStyleHebergement imageVignette6"></div>
+              <div class="texteVignette"><h3>Hôtel chez Amina</h3></div>
+              <div class="prixVignette">Nuit à partir de 96<b>€</b></div>
+              <div class="noteVignette displayFlex">
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="texteAfficher">Afficher plus</div>
+      </div>
+      <div class="fondPopulaire">
+        <div class="texteIcon">
+          <div class="texteRecherchePopulaire"><h2>Les plus populaires</h2></div>
+          <div class="iconPopulaire"><i class="fa-solid fa-star"></i></div>
+        </div>
+        <div class="serieVignettePopulaire">
+          <article class="vignettePopulaire displayFlex">
+            <a href="#" class="displayFlex">
+              <div class="divPhoto">
+                <div class="imageStylePopulaire imageVignettePopulaire1"></div>
+              </div>
+              <div class="infoVignette">
+                <div class="texteVignette marginLeft5Pourcent"><h3>Hôtel Le soleil du matin</h3></div>
+                <div class="prixVignette marginLeft5Pourcent">Nuit à partir de 128<b>€</b></div>
+                <div class="noteVignette displayFlex marginLeft5Pourcent marginTop20Pourcent">
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="vignettePopulaire displayFlex">
+            <a href="#" class="displayFlex">
+              <div class="divPhoto">
+                <div class="imageStylePopulaire imageVignettePopulaire2"></div>
+              </div>
+              <div class="infoVignette">
+                <div class="texteVignette marginLeft5Pourcent"><h3>Au coeur de l'eau Chambres d'hôtes</h3></div>
+                <div class="prixVignette marginLeft5Pourcent">Nuit à partir de 71<b>€</b></div>
+                <div class="noteVignette displayFlex marginLeft5Pourcent marginTop20Pourcent">
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="vignettePopulaire displayFlex">
+            <a href="#" class="displayFlex">
+              <div class="divPhoto">
+                <div class="imageStylePopulaire imageVignettePopulaire3"></div>
+              </div>
+              <div class="infoVignette">
+                <div class="texteVignette marginLeft5Pourcent"><h3>Hôtel Tout bleu et Blanc</h3></div>
+                <div class="prixVignette marginLeft5Pourcent">Nuit à partir de 68<b>€</b></div>
+                <div class="noteVignette displayFlex marginLeft5Pourcent marginTop20Pourcent">
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="bonneEtoiles"><i class="fa-solid fa-star"></i></div>
+                  <div class="mauvaiseEtoiles"><i class="fa-solid fa-star"></i></div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="fondActivites">
+      <div id="texteActivites"><h2>Activités à Marseille</h2></div>
+         <div class="parentToutesVignettes displayFlex">
+          <div class="parentVignette1 displayFlex">
+            <article class="vignetteActivitesVieuxPort">
+              <a href="#">
+                <div class="divPhoto">
+                  <div class="imageStyleActivitesUN photoVieuxPort"></div>
+                </div>
+                <div class="texteVignetteVieuxPort"><h4>Vieux Port</h4></div> 
+              </a> 
+            </article>
+            <div class="parentVignetteDeuxEtTrois displayFlex">
+              <article class="vignetteActivitesFort">
+                <a href="#">
+                  <div class="divPhoto">
+                    <div class="imageStyleFort photoFort"></div>
+                  </div>
+                  <div class="texteVignetteFort"><h4>Fort de Pomègues</h4></div>
+                </a>                
+              </article>
+              <article class="vignetteActivitesIles">
+                <a href="#">
+                  <div class="divPhoto">
+                    <div class="photoIles imageStyleIles"></div>
+                  </div>
+                  <div class="texteVignetteIles"><h4>Îles du Frioul</h4></div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <div class="parentTroisVignetteDroite">
+            <div class="parentVignette1 displayFlex">
+              <article class="vignetteActivitesVieuxPort">
+                <a href="#">
+                  <div class="divPhoto">
+                    <div class="imageStyleActivitesUN photoParcCalanques"></div>
+                  </div>
+                  <div class="texteVignetteParcCalanques"><h4>Parc National des Calanques</h4></div>
+                </a>
+              </article>
+              <div class="parentVignetteDeuxEtTrois displayFlex">
+                <article class="vignetteActivitesNotreDame">
+                <a href="#">
+                    <div class="divPhoto">
+                      <div class="imageStyleNotreDame photoNotreDame"></div>
+                    </div>
+                    <div class="texteVignetteNotreDame"><h4>Notre-Dame-de-la-Garde</h4></div>
+                </a>                    
+                </article>
+                <article class="vignetteActivitesParcLongchamp">
+                <a href="#">
+                    <div class="divPhoto">
+                      <div class="photoParcLongchamp imageStyleParcLongchamp"></div>
+                    </div>
+                    <div class="texteVignetteParcLongchamp"><h4>ParcLongchamp</h4></div>
+                </a>                  
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <section class="fondFooter">
+      <div class="aPropos">
+        <div class="listeApropos">
+          <h3>A propos</h3>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+          </ul>
+        </div>
+      </div>
+      <div class="nosHebergement">
+        <div class="listeNosHebergement">
+          <h3>Nos hébergements</h3>  
+          <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+          </ul>
+        </div>
+      </div>
+      <div class="assistance">
+        <div class="listeAssistance">
+          <h3>Assistance</h3>    
+          <ul>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
